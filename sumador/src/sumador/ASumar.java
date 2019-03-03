@@ -1,5 +1,34 @@
 package sumador;
-
+/**
+ * 
+ * @author Francis
+ * @version 1.0
+ *
+ */
 public class ASumar {
+	String valor_inicial;
+	/**
+	 * Al construir el objeto ASumar, la variable valor_inicial toma el valor del string
+	 * @param string -> El objeto se construye a partir de un único elemento tipo String
+	 */
+	public ASumar(String string) {
+        this.valor_inicial = string;
+        
+	}
+	/**
+	 * Este método devuelve una cadena de carácteres para usar en las clases Test siempre que la longitud del número, que toma el valor inicial anteriormente definido
+	 * sea de 1 dígito.
+	 * @return Cadena de carácteres que se iguala con la clase Test
+	 */
+	public String mostrar() {
+		String numero = valor_inicial;
+        if (numero.length() == 1) {
+            return (numero + " = " + numero);
+        }	
+        else {
+        	return null;
+        }
+	}
+	
 
 }
