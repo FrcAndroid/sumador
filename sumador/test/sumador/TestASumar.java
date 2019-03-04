@@ -7,8 +7,10 @@ import org.junit.Test;
 public class TestASumar {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testVariosDigitos() {
+		ASumar s = new ASumar("17");
+		int resultado = s.total(); 
+		assertEquals(8, resultado);
 	}
 
 }
