@@ -7,6 +7,7 @@ package sumador;
  */
 public class ASumar {
 	String valor_inicial;
+
 	/**
 	 * Al construir el objeto ASumar, la variable valor_inicial toma el valor del string
 	 * @param string -> El objeto se construye a partir de un único elemento tipo String
@@ -53,5 +54,22 @@ public class ASumar {
 		return resultado;
 		
 	}
+
+	/**
+	 * Este método usa un número en forma de cadena de carácteres y usa un bucle for para recorrer cada dígito y sumarlos, almacenandose en el valor suma. 
+	 * @return valor final de suma al terminar el bucle for, suma de todos los dígitos individuales del número.
+	 */
+	public int total() {
+		int suma = 0;
+		
+		for(int i = 0; i< valor_inicial.length(); i++) {
+			// Cadena de un dígito.
+			String digito = valor_inicial.substring(i, i+1);
+			suma = suma + Integer.parseInt(digito);
+		}
+		return suma;
+	}
+
+
 	
 }

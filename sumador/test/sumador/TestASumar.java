@@ -9,6 +9,7 @@ public class TestASumar {
 	 * Este método usa el método mostrar de la clase ASumar para igualar dos cadenas de carácteres, y da positivo si estas dos cadenas son iguales.
 	 */
 	@Test
+
 	public void testUnDigito() {
 		ASumar s = new ASumar("7");
         String resultado = s.mostrar();
@@ -22,5 +23,14 @@ public class TestASumar {
 		String resultado = s.mostrar2();
 		assertEquals("", resultado);
 	}
+	/**
+	 * Este método comprueba que la suma de cada dígito sea igual al esperado (1+7=8)
+	 */
+	public void testVariosDigitos() {
+		ASumar s = new ASumar("17");
+		int resultado = s.total(); 
+		assertEquals(8, resultado);
+	}
+
 
 }
