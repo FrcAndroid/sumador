@@ -14,5 +14,13 @@ public class TestASumar {
         String resultado = s.mostrar();
         assertEquals("7 = 7",resultado );
     }
+	/**
+	 * Este método hace lo mismo que el anterior, dando positivo si ambas cadenas estan vacías.
+	 */
+	public void testCifraNegativa() {
+		ASumar s = new ASumar(-1);
+		String resultado = s.mostrar2();
+		assertEquals("", resultado);
+	}
 
 }

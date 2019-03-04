@@ -29,6 +29,29 @@ public class ASumar {
         	return null;
         }
 	}
-	
 
+	int valor_inicial2;
+
+	public ASumar(int i) {
+		this.valor_inicial2 = i;
+		
+	}
+	/**
+	 * A diferencia del método mostrar anterior, este método requiere un objeto de clase int, por lo que si el número es negativo, devolverá una cadena vacía.
+	 * @return Cadena de carácteres que se usará en el Test.
+	 */
+
+	public String mostrar2() {
+		int numero = valor_inicial2;
+		String resultado;
+		if (numero < 0) {
+			resultado = "";
+		}
+		else {
+			resultado = "("+ numero + " == " + numero +")";
+		}
+		return resultado;
+		
+	}
+	
 }
