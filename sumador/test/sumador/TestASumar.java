@@ -7,8 +7,10 @@ import org.junit.Test;
 public class TestASumar {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testCifraNegativa() {
+		ASumar s = new ASumar(-1);
+		String resultado = s.mostrar();
+		assertEquals("", resultado);
 	}
 
 }
